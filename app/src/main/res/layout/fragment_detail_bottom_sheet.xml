@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".fragment.DetailBottomSheet">
+
+    <ImageView
+        android:id="@+id/img_avatar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/man1_clicked"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imgbtn_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@android:color/white"
+        android:src="@drawable/ic_delete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imgbtn_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:background="@android:color/white"
+        android:src="@drawable/ic_edit"
+        app:layout_constraintEnd_toStartOf="@+id/imgbtn_delete"
+        app:layout_constraintTop_toTopOf="@+id/imgbtn_delete" />
+
+    <TextView
+        android:id="@+id/tv_namalengkap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/mont_medium"
+        android:text="@string/nama_lengkap"
+        android:textColor="@color/textColor"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_avatar" />
+
+    <ImageView
+        android:id="@+id/loc"
+        style="@style/imagedetail"
+        android:src="@drawable/location"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_namalengkap" />
+
+    <ImageView
+        android:id="@+id/laptop"
+        style="@style/imagedetail"
+        android:src="@drawable/ic_laptop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loc" />
+
+    <ImageView
+        android:id="@+id/telephone"
+        style="@style/imagedetail"
+        android:src="@drawable/ic_telephone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/laptop" />
+
+    <TextView
+        android:id="@+id/txt_detail_alamat"
+        style="@style/textdetail"
+        android:text="@string/alamat"
+        app:layout_constraintStart_toEndOf="@+id/loc"
+        app:layout_constraintTop_toTopOf="@+id/loc" />
+
+    <TextView
+        android:id="@+id/txt_detail_jurusan"
+        style="@style/textdetail"
+        android:text="@string/jurusan"
+        app:layout_constraintStart_toEndOf="@+id/laptop"
+        app:layout_constraintTop_toTopOf="@+id/laptop" />
+
+    <TextView
+        android:id="@+id/txt_detail_telephone"
+        style="@style/textdetail"
+        android:text="@string/telephone"
+        app:layout_constraintStart_toEndOf="@+id/telephone"
+        app:layout_constraintTop_toTopOf="@+id/telephone" />
+
+       <View
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/txt_detail_telephone" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

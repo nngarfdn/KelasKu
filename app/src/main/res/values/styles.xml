@@ -1,0 +1,55 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+       <style name="AppTheme" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="imagedetail">
+        <item name="android:layout_width">24dp</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:layout_marginStart">32dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+
+    <style name="textdetail">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:fontFamily">@font/mont_regular</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+     <style name="search">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginHorizontal" tools:ignore="NewApi">8dp</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:outlineAmbientShadowColor" tools:ignore="NewApi">@color/textColor</item>
+        <item name="android:outlineSpotShadowColor" tools:ignore="NewApi">@color/textColor</item>
+        <item name="android:shadowColor">@color/textColor</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textColorHighlight">@color/colorPrimary</item>
+        <item name="android:textColorHint">@color/textColor</item>
+        <item name="android:textColorLink">@color/textColor</item>
+    </style>
+
+    <style name="ImageAdd">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">16dp</item>
+    </style>
+
+</resources>
