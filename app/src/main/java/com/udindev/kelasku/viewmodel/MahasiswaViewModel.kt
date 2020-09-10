@@ -24,6 +24,8 @@ class MahasiswaViewModel : ViewModel() {
         })
     }
 
+
+
     fun insertData(nama: String, nohp: String, alamat: String, avatar : String) {
         isLoading.value = true
         repository.insertData(nama,nohp,alamat,avatar,{
